@@ -124,8 +124,6 @@ body{
     border: 2px solid red;
     border-radius: 10px;
 }
-
-
 /* ----------------------design for displaying the list of todo -------------------- */
 
 
@@ -181,4 +179,51 @@ body{
 .completed {
     background-color: green;
     color: white;
+}
+
+
+/*Button Hover Effect */
+.button button {
+    transition: all 0.3s ease-in-out;
+}
+
+.button button:hover {
+    background-color: rgb(255, 99, 71); 
+    transform: scale(1.1);
+}
+
+.button button:active {
+    transform: scale(0.95);
+}
+
+/* Fade-in effect when adding a new to-do */
+.forflex3 {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth transition when deleting */
+.forflex3.removed {
+    animation: fadeOut 0.4s ease-in-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
 }
