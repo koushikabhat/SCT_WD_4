@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: rgb(46, 42, 42);
+}
+
+/*------------------------------ design for top menue ---------------------------------  */
+
+.forflexmain{
+    display: flex;
+    justify-content: center;
+}
+.main1{
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    display: inline-flex;
+    width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    
+}
+.main1 span{
+    margin-top: 6px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.main1 div{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+
+/*-------------------------- design for main container  ------------------------------------*/
+.maincontainer{
+    
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.submain{
+    margin-top: 20px;
+    border: 3px solid rgb(242, 255, 0);
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    color: aqua;
+}
+.desc{
+    display: flex;
+    font-size: 30px;
+    font-weight: bolder;
+    gap: 25px;
+    color: aqua;
+}
+
+#titleinp{
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 50px;
+    width: 500px;
+    font-size: 20px;
+}
+
+#descinp{
+    font-size: 20px;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 50px;
+    width: 500px;
+    /* background-color: rgb(142, 202, 255); */
+}
+
+.forflexbtn{
+    margin-top: 20px;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+/* design for button */
+.button .add{
+    height: 40px;
+    width: 130px;
+    background-color: red;
+    color: rgb(246, 246, 246);
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+.button .view-completed{
+    height: 40px;
+    width: 150px;
+    background-color: red;
+    color: rgb(246, 246, 246);
+    font-size: 16px;
+    font-weight: bolder;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+
+/* ----------------------design for displaying the list of todo -------------------- */
+
+
+.forflex3 {
+    margin-left: 415px;
+    margin-top: 30px;
+    width: 650px; /* Ensure all items are of the same width */
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid white;
+    color: white;   
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Adjusting text and button alignment */
+.forflex3 div {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+
+    word-wrap: break-word; /* Break words that are too long */
+    overflow-wrap: break-word; /* Ensure words break properly */
+    white-space: normal; /* Allow text to wrap to the next line */
+}
+
+/* Buttons in each todo item */
+.forflex2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn button {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+}
+
+.completed {
+    background-color: green;
+    color: white;
+}
